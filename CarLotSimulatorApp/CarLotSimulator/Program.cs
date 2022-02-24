@@ -7,6 +7,12 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
+
+            //Building on our car lot simulator project, create a CarLot class with a static field called numberOfCars.
+            //Have this number only increment when in our program we create a new Car.
+            //From there create 3 cars in the Main() and then each time you create a car,
+            //do a Console.WriteLine() printing the current number of cars in the car lot. 
+
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
@@ -29,6 +35,8 @@ namespace CarLotSimulator
             car1.MakeEngineNoise(car1.EngineNoise);
             car1.MakeHonkNoise(car1.HonkNoise);
 
+            Console.WriteLine($"Number of cars in car lot: {CarLot._numberOfCars}");
+
 
             // Object Initializer Syntax:
             var car2 = new Car()
@@ -47,6 +55,8 @@ namespace CarLotSimulator
             car2.MakeEngineNoise(car2.EngineNoise);
             car2.MakeHonkNoise(car2.HonkNoise);
 
+            Console.WriteLine($"Number of cars in car lot: {CarLot._numberOfCars}");
+
 
             // Parameterized Constructor:
             Car car3 = new Car(2022, "Ford", "GT", "GRRROOWWWWLLLLL", "Low Beep", true);
@@ -56,6 +66,8 @@ namespace CarLotSimulator
             car3.PrintCarName(car3.Make, car3.Model);
             car3.MakeEngineNoise(car3.EngineNoise);
             car3.MakeHonkNoise(car3.HonkNoise);
+
+            Console.WriteLine($"Number of cars in car lot: {CarLot._numberOfCars}");
 
 
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console

@@ -6,7 +6,7 @@ namespace CarLotSimulator
         // Default Constructor
         public Car()
         {
-
+            CarLot._numberOfCars++;
         }
 
         // Perameterized Constructor
@@ -18,6 +18,7 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
+            CarLot._numberOfCars++;
         }
 
 

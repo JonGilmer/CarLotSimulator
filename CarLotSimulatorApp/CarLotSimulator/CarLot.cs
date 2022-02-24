@@ -16,7 +16,10 @@ namespace CarLotSimulator
 
         }
 
+        // static field
+        public static int _numberOfCars;
+
         // Property
-        public List<Car> CarLot_ListProperty = new List<Car>();
+        public List<Car> CarLot_ListProperty { get; set; } = new List<Car>();
     }
 }
